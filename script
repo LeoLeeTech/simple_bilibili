@@ -36,7 +36,7 @@
     /* 弹幕列表上方广告 */
     .vcd,
     /* 弹幕列表下方广告 */
-    .ad-floor-cover,
+    .ad-report,
     /* 顶部推荐 */
     .header-channel,
     .header-channel-fixed,
