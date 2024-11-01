@@ -2,11 +2,4 @@
 
 我还创建了个github的仓库, 只是为了给大家一个共建的平台, 原作者有意的话可转让该仓库 or 给所有的权限
 
-
-原脚本: https://greasyfork.org/zh-CN/scripts/501560-b%E7%AB%99%E7%BA%AF%E5%87%80%E6%A8%A1%E5%BC%8F
-
-原贴: https://www.52pojie.cn/thread-1946722-14-1.html
-
-我的跟帖在: 134楼
-
-github: https://github.com/lijileiGood/bilibili_simple/
+原脚本: https://greasyfork.org/zh-CN/scripts/501560-b%E7%AB%99%E7%BA%AF%E5%87%80%E6%A8%A1%E5%BC%8
