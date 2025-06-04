@@ -1,0 +1,49 @@
+// ==UserScript==
+// @name         V站纯净模式
+// @namespace    http://tampermonkey.net/
+// @version      2025-06-04
+// @description  try to take over the world!
+// @author       You
+// @match        https://v2ex.com/
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=v2ex.com
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    function displayNone(domTag) {
+        const domSelector = document.querySelector(domTag)
+        if(domSelector) {
+            domSelector.style.display = 'none'
+        }
+    }
+
+    // 创建一个新的<style>元素
+    var style = document.createElement('style');
+    style.type = 'text/css';
+    // 定义CSS规则
+    var css = `
+    /* 主页 class */
+    .item,
+    /* 这个不能删, 删了就这个脚本就失效了 */
+    .pop-live-small-mode {
+        display: none!important;
+    }
+    `;
+
+    if (style.styleSheet) {
+        // 兼容IE的写法
+        style.styleSheet.cssText = css;
+    } else {
+        // 其他浏览器的写法
+        style.appendChild(document.createTextNode(css));
+    }
+
+    // 将样式应用到文档中
+    document.head.appendChild(style);
+
+    displayNone('main.bili-feed4-layout')
+
+
+})();
